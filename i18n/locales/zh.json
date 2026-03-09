@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "Letitia 的个人主页",
+    "description": "Web 程序员，用代码解决问题，借 AI 做有趣的事。"
+  },
+  "hero": {
+    "tagline": "我是一个 web 程序员，我喜欢用代码来解决问题。",
+    "greeting": "你好，我是"
+  },
+  "about": {
+    "title": "关于我",
+    "doing": "正在做",
+    "doingValue": "借助 AI 做一些有趣的事情。",
+    "interests": "兴趣",
+    "interestsValue": "编程、舞蹈、阅读。",
+    "motto": "秉承人生不是成功就是成长。"
+  },
+  "chat": {
+    "title": "数字分身",
+    "placeholder": "向我提问…",
+    "send": "发送",
+    "thinking": "思考中…",
+    "intro": "可以问我：我擅长什么？最近在做什么？有什么爱好？"
+  },
+  "nav": {
+    "lang": "English"
+  }
+}

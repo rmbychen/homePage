@@ -1,0 +1,167 @@
+@font-face {
+  font-family: 'SerifCN';
+  src: local('Songti SC'), local('SimSun'), local('serif');
+  font-weight: 400 600;
+}
+
+:root {
+  --color-ink: #1a2f2f;
+  --color-bg: #f0f7f7;
+  --color-card: #e6f2f2;
+  --color-primary: #2a8b8b;
+  --color-primary-light: #5eb4b4;
+  --color-accent: #1d6b6b;
+  --color-muted: #5c7a7a;
+  --color-border: #b8d4d4;
+  --font-sans: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --font-serif: 'SerifCN', 'Songti SC', serif;
+  --radius: 12px;
+  --shadow: 0 4px 20px rgba(42, 139, 139, 0.08);
+  --shadow-hover: 0 8px 28px rgba(42, 139, 139, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: var(--color-bg);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.site {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* 全屏古风背景：宣纸底 · 水墨晕染 · 远山云气，纯 CSS */
+.site::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -3;
+  /* 宣纸底色 + 极细绢纹 */
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 2px,
+      rgba(200, 215, 210, 0.04) 2px,
+      rgba(200, 215, 210, 0.04) 4px
+    ),
+    linear-gradient(
+      160deg,
+      #f5f9f6 0%,
+      #eef5f1 12%,
+      #e6f0eb 28%,
+      #dfebe6 45%,
+      #e2eeea 62%,
+      #eaf3f0 78%,
+      #f2f7f5 100%
+    );
+  background-blend-mode: overlay;
+}
+
+/* 第二层：远山轮廓感 · 青墨分层 */
+.site::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background:
+    /* 最远一层山影，极淡 */
+    linear-gradient(
+      175deg,
+      transparent 0%,
+      transparent 45%,
+      rgba(180, 200, 195, 0.12) 70%,
+      rgba(160, 185, 178, 0.08) 88%,
+      transparent 100%
+    ),
+    /* 左上云气/烟岚 */
+    radial-gradient(
+      ellipse 85% 55% at 5% 12%,
+      rgba(190, 215, 208, 0.28) 0%,
+      rgba(175, 205, 198, 0.12) 35%,
+      transparent 58%
+    ),
+    /* 右侧淡墨晕 */
+    radial-gradient(
+      ellipse 75% 65% at 92% 30%,
+      rgba(150, 185, 178, 0.22) 0%,
+      rgba(165, 192, 186, 0.08) 45%,
+      transparent 65%
+    ),
+    /* 底部江面/水气 */
+    radial-gradient(
+      ellipse 110% 45% at 50% 98%,
+      rgba(185, 212, 206, 0.2) 0%,
+      rgba(170, 198, 191, 0.08) 40%,
+      transparent 60%
+    ),
+    /* 中景薄雾 */
+    radial-gradient(
+      ellipse 65% 35% at 52% 50%,
+      rgba(255, 255, 255, 0.35) 0%,
+      transparent 52%
+    );
+  pointer-events: none;
+}
+
+
+.site-header {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid rgba(184, 212, 212, 0.6);
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+}
+
+.site-main {
+  flex: 1;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+  width: 100%;
+}
+
+.lang-switch {
+  font-size: 0.9rem;
+  color: var(--color-primary);
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+}
+
+.lang-switch:hover {
+  background: rgba(230, 242, 242, 0.75);
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .site-main {
+    padding: 1.5rem 1rem 2rem;
+  }
+}

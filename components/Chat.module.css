@@ -1,0 +1,130 @@
+.chat {
+  background: var(--color-card);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.75rem;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--color-border);
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.intro {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  margin-bottom: 1rem;
+}
+
+.messages {
+  min-height: 120px;
+  max-height: 320px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+}
+
+.msg {
+  margin-bottom: 0.75rem;
+}
+
+.msg:last-child {
+  margin-bottom: 0;
+}
+
+.msgUser {
+  text-align: right;
+}
+
+.msgUser .bubble {
+  display: inline-block;
+  max-width: 85%;
+  padding: 0.5rem 0.85rem;
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 14px 14px 4px 14px;
+  font-size: 0.95rem;
+}
+
+.msgBot .bubble {
+  display: inline-block;
+  max-width: 85%;
+  padding: 0.5rem 0.85rem;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  border: 1px solid var(--color-border);
+  border-radius: 14px 14px 14px 4px;
+  font-size: 0.95rem;
+}
+
+.msgThinking .bubble {
+  color: var(--color-muted);
+  font-style: italic;
+}
+
+.inputRow {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.inputRow input {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #fff;
+  color: var(--color-ink);
+}
+
+.inputRow input::placeholder {
+  color: var(--color-muted);
+}
+
+.inputRow input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(42, 139, 139, 0.2);
+}
+
+.inputRow button {
+  padding: 0.6rem 1.25rem;
+  background: rgba(42, 139, 139, 0.72);
+  color: #fff;
+  border: 1px solid rgba(42, 139, 139, 0.5);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+  backdrop-filter: blur(6px);
+}
+
+.inputRow button:hover {
+  background: rgba(29, 107, 107, 0.78);
+  border-color: rgba(29, 107, 107, 0.55);
+}
+
+.inputRow button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  background: rgba(42, 139, 139, 0.5);
+}
+
+@media (max-width: 640px) {
+  .chat {
+    padding: 1.25rem 1rem;
+  }
+
+  .msgUser .bubble,
+  .msgBot .bubble {
+    max-width: 95%;
+  }
+}

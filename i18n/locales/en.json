@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "Letitia's Homepage",
+    "description": "Web developer who loves solving problems with code and exploring AI."
+  },
+  "hero": {
+    "tagline": "I'm a web developer. I like solving problems with code.",
+    "greeting": "Hi, I'm"
+  },
+  "about": {
+    "title": "About Me",
+    "doing": "Currently",
+    "doingValue": "Exploring interesting things with AI.",
+    "interests": "Interests",
+    "interestsValue": "Coding, dance, reading.",
+    "motto": "Life is either success or growth."
+  },
+  "chat": {
+    "title": "Digital Twin",
+    "placeholder": "Ask me anything…",
+    "send": "Send",
+    "thinking": "Thinking…",
+    "intro": "You can ask: What am I good at? What am I doing lately? What are my hobbies?"
+  },
+  "nav": {
+    "lang": "中文"
+  }
+}

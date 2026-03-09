@@ -1,0 +1,19 @@
+# dependencies
+node_modules
+.pnp
+.pnp.js
+
+# build
+.next
+out
+dist
+
+# misc
+.DS_Store
+*.pem
+.env*.local
+debug.log
+npm-debug.log*
+
+# types
+next-env.d.ts
