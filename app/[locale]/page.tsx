@@ -29,7 +29,7 @@ export default async function HomePage({
   const messages = await getMessages(lang);
   return (
     <>
-      <Hero messages={messages} name="Letitia" locale={locale} />
+      <Hero messages={messages} name="陈亮" locale={locale} />
       <About messages={messages} />
       <Chat messages={messages} locale={locale} />
     </>

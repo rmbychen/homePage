@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Letitia's Homepage",
-    "description": "Web developer who loves solving problems with code and exploring AI."
+    "title": "Chen Liang's Homepage",
+    "description": "Quality engineer. Solving problems with rigor—no detail overlooked."
   },
   "hero": {
-    "tagline": "I'm a web developer. I like solving problems with code.",
+    "tagline": "a quality engineer who likes solving problems with rigor. Not a single hair gets past me.",
     "greeting": "Hi, I'm"
   },
   "about": {
@@ -12,7 +12,7 @@
     "doing": "Currently",
     "doingValue": "Exploring interesting things with AI.",
     "interests": "Interests",
-    "interestsValue": "Coding, dance, reading.",
+    "interestsValue": "Fishing, cooking, Douyin.",
     "motto": "Life is either success or growth."
   },
   "chat": {

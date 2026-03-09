@@ -1,18 +1,18 @@
 {
   "meta": {
-    "title": "Letitia 的个人主页",
-    "description": "Web 程序员，用代码解决问题，借 AI 做有趣的事。"
+    "title": "陈亮的个人主页",
+    "description": "质量工程师，用严谨解决问题，一根头发都不放过。"
   },
   "hero": {
-    "tagline": "我是一个 web 程序员，我喜欢用代码来解决问题。",
-    "greeting": "你好，我是"
+    "tagline": "是一位质量工程师，喜欢用严谨来解决问题，一根头发都不放过。",
+    "greeting": "您好，我是"
   },
   "about": {
     "title": "关于我",
     "doing": "正在做",
     "doingValue": "借助 AI 做一些有趣的事情。",
     "interests": "兴趣",
-    "interestsValue": "编程、舞蹈、阅读。",
+    "interestsValue": "钓鱼、做饭、刷抖音。",
     "motto": "秉承人生不是成功就是成长。"
   },
   "chat": {
